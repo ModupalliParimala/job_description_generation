@@ -1,0 +1,7 @@
+python-dotenv
+langchain_google_genai
+python-docx
+pypandoc_binary
+docx2pdf
+langchain_groq
+langchain-ollama

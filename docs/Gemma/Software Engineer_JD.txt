@@ -1,0 +1,58 @@
+Description:
+
+TI-TechInterrupt is seeking a talented and motivated Software Engineer
+to join our growing team. In this role, you will be involved in the
+design, development, and implementation of innovative software
+solutions. We offer a collaborative and dynamic work environment where
+you can contribute to cutting-edge projects and expand your technical
+skillset.
+
+Responsibilities:
+
+-   Design, develop, and implement software applications using Java,
+    Python, and SQL
+
+-   Write clean, efficient, and well-documented code
+
+-   Collaborate with cross-functional teams to gather requirements and
+    deliver solutions
+
+-   Participate in code reviews and ensure adherence to best practices
+
+-   Troubleshoot and resolve technical issues
+
+-   Contribute to the continuous improvement of our development
+    processes
+
+Skills:
+
+-   Java
+
+-   Python
+
+-   SQL
+
+-   Object-Oriented Programming
+
+-   Agile Methodologies
+
+-   Version Control Systems (e.g., Git)
+
+-   Problem-Solving
+
+-   Communication
+
+-   Teamwork
+
+Experience:
+
+-   2-3 years of proven experience in software development
+
+-   Hands-on experience with Java, Python, and SQL
+
+-   Experience working in an Agile development environment
+
+-   Demonstrated ability to design and implement efficient and scalable
+    software solutions
+
+-   Strong understanding of software development best practices
