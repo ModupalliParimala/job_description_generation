@@ -10,5 +10,6 @@ def load_llm():
     """LLM Model to be used"""
     llm = ChatOllama(
         model="llama3.1:8b",
+        temperature=0.5,
     )
     return llm

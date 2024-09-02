@@ -6,17 +6,17 @@ from docx2pdf import convert
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 
-def save_jd(llm_response, file_name, f_format=None):
+def save_jd_and_retrieve(llm_response, file_name):
     """Persist the JD into folder"""
 
-    file_name = "docs/" + file_name + "_JD"
+    file_name += "_JD"
+    file_name_saved = "docs/" + file_name
 
-    if f_format == "txt":
-        save_jd_txt(llm_response, file_name)
-    elif f_format == "doc":
-        save_jd_doc(llm_response, file_name)
-    else:
-        save_jd_pdf(llm_response, file_name)
+    save_jd_txt(llm_response, file_name_saved)
+    save_jd_doc(llm_response, file_name_saved)
+    save_jd_pdf(llm_response, file_name_saved)
+
+    return file_name
 
 
 def save_jd_doc(llm_response, file_name):
@@ -46,15 +46,18 @@ def save_jd_doc(llm_response, file_name):
         doc.add_paragraph(responsibility, bullet_style)
 
     doc.save(f"{file_name}.docx")
+    return f"{file_name}.docx"
 
 
 def save_jd_pdf(llm_response, f_name):
     """Persist the JD as PDF"""
     save_jd_doc(llm_response, f_name)
     convert(f"{f_name}.docx")
+    return f"{f_name}.pdf"
 
 
 def save_jd_txt(llm_response, f_name):
     """Persist the JD as TXT"""
     save_jd_doc(llm_response, f_name)
     pypandoc.convert_file(f"{f_name}.docx", "plain", outputfile=f"{f_name}.txt")
+    return f"{f_name}.txt"
