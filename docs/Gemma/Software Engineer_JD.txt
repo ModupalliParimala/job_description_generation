@@ -1,58 +1,54 @@
 Description:
 
-TI-TechInterrupt is seeking a talented and motivated Software Engineer
-to join our growing team. In this role, you will be involved in the
-design, development, and implementation of innovative software
-solutions. We offer a collaborative and dynamic work environment where
-you can contribute to cutting-edge projects and expand your technical
-skillset.
+TI-TechInterrupt is seeking a talented and passionate Software Engineer
+to join our growing team. In this role, you will contribute to the
+development and maintenance of our cutting-edge software applications
+using Python and FastAPI. We offer a dynamic work environment with
+opportunities for growth and innovation.
 
 Responsibilities:
 
--   Design, develop, and implement software applications using Java,
-    Python, and SQL
+-   Design, develop, and implement RESTful APIs using FastAPI.
 
--   Write clean, efficient, and well-documented code
+-   Write clean, efficient, and well-documented Python code.
 
--   Collaborate with cross-functional teams to gather requirements and
-    deliver solutions
+-   Collaborate with cross-functional teams to define system
+    requirements and specifications.
 
--   Participate in code reviews and ensure adherence to best practices
+-   Participate in code reviews and ensure adherence to best practices.
 
--   Troubleshoot and resolve technical issues
+-   Troubleshoot and debug software issues.
 
 -   Contribute to the continuous improvement of our development
-    processes
+    processes.
 
 Skills:
 
--   Java
-
 -   Python
+
+-   FastAPI
+
+-   REST APIs
 
 -   SQL
 
--   Object-Oriented Programming
+-   Git
 
 -   Agile Methodologies
 
--   Version Control Systems (e.g., Git)
-
--   Problem-Solving
-
--   Communication
-
--   Teamwork
-
 Experience:
 
--   2-3 years of proven experience in software development
+-   2-3 years of proven experience in software development using Python.
 
--   Hands-on experience with Java, Python, and SQL
+-   Hands-on experience building and deploying RESTful APIs with
+    FastAPI.
 
--   Experience working in an Agile development environment
+-   Strong understanding of object-oriented programming principles.
 
--   Demonstrated ability to design and implement efficient and scalable
-    software solutions
+-   Experience working with relational databases (e.g., PostgreSQL,
+    MySQL).
 
--   Strong understanding of software development best practices
+-   Familiarity with cloud computing platforms (e.g., AWS, Azure) is a
+    plus.
+
+-   Excellent communication and collaboration skills.

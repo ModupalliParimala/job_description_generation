@@ -2,7 +2,7 @@
 
 import os
 
-from fastapi import BackgroundTasks, FastAPI, Query
+from fastapi import BackgroundTasks, FastAPI
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
@@ -16,7 +16,7 @@ class JobDescriptionRequest(BaseModel):
     """Request Parameters"""
 
     job_title: str
-    experience: int
+    experience: str
     skills: str
 
 
@@ -44,8 +44,8 @@ async def generate_jd(request: JobDescriptionRequest):
 @app.get("/download")
 async def download_jd(
     background_tasks: BackgroundTasks,
-    f_name: str = Query,
-    f_type: str = Query,
+    f_name: str,
+    f_type: str,
 ):
     """Serving PDF Response"""
     f_name = "docs/" + f_name
