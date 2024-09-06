@@ -53,8 +53,8 @@ async def download_jd(
 
     if f_type.endswith("txt"):
         return FileResponse(f_name + ".txt", media_type="text/plain")
-    elif f_type.endswith("pdf"):
-        return FileResponse(f_name + ".pdf", media_type="application/pdf")
+    # elif f_type.endswith("pdf"):
+    #     return FileResponse(f_name + ".pdf", media_type="application/pdf")
     else:
         return FileResponse(
             f_name + ".docx",

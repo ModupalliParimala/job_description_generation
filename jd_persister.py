@@ -13,7 +13,7 @@ def save_jd_and_retrieve(llm_response, file_name):
 
     save_jd_txt(llm_response, file_name_saved)
     save_jd_doc(llm_response, file_name_saved)
-    save_jd_pdf(llm_response, file_name_saved)
+    # save_jd_pdf(llm_response, file_name_saved)
 
     return file_name
 
