@@ -2,7 +2,6 @@
 
 import pypandoc
 from docx import Document
-from docx2pdf import convert
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 
@@ -52,7 +51,7 @@ def save_jd_doc(llm_response, file_name):
 def save_jd_pdf(llm_response, f_name):
     """Persist the JD as PDF"""
     save_jd_doc(llm_response, f_name)
-    convert(f"{f_name}.docx")
+    pypandoc.convert_file(f"{f_name}.docx", "pdf", outputfile=f"{f_name}.pdf")
     return f"{f_name}.pdf"
 
 
