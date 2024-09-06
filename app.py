@@ -79,8 +79,8 @@ def generate_job_description():
     print("Job Description generated successfully!!!")
 
 
-if __name__ == "__main__":
-    # generate_job_description()
-    import uvicorn
+# if __name__ == "__main__":
+#     # generate_job_description()
+#     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+#     uvicorn.run(app, host="0.0.0.0", port=8000)
