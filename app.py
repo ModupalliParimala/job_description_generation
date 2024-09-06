@@ -24,7 +24,7 @@ def delete_file(file_path: str):
     """Deleting the generated files"""
     try:
         os.remove(f"{file_path}.txt")
-        os.remove(f"{file_path}.pdf")
+        # os.remove(f"{file_path}.pdf")
         os.remove(f"{file_path}.docx")
     except Exception as e:
         print(f"Error deleting file {file_path}: {e}")
@@ -36,7 +36,7 @@ async def generate_jd(request: JobDescriptionRequest):
     llm_response = get_jd_from_model_json(
         request.job_title, request.skills, request.experience
     )
-    file_path = save_jd_and_retrieve(llm_response, file_name=request.job_title)
+    file_path = save_jd_and_retrieve(llm_response, job_title=request.job_title)
     print("Job Description generated successfully!!!")
     return {"message": "Success", "file_name": file_path}
 
@@ -48,18 +48,14 @@ async def download_jd(
     f_type: str,
 ):
     """Serving PDF Response"""
-    f_name = "docs/" + f_name
-    background_tasks.add_task(delete_file, f_name)
+    background_tasks.add_task(delete_file, f"docs/{f_name}")
 
     if f_type.endswith("txt"):
-        return FileResponse(f_name + ".txt", media_type="text/plain")
-    # elif f_type.endswith("pdf"):
-    #     return FileResponse(f_name + ".pdf", media_type="application/pdf")
+        f_name += ".txt"
+        return FileResponse(f"docs/{f_name}", filename=f_name)
     else:
-        return FileResponse(
-            f_name + ".docx",
-            media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-        )
+        f_name += ".docx"
+        return FileResponse(f"docs/{f_name}", filename=f_name)
 
 
 def get_job_description_inputs():
@@ -75,7 +71,7 @@ def generate_job_description():
     (job_title, skills, experience) = get_job_description_inputs()
     llm_response = get_jd_from_model_json(job_title, skills, experience)
     print("LLM Response", llm_response)
-    save_jd_and_retrieve(llm_response, file_name=job_title)
+    save_jd_and_retrieve(llm_response, job_title=job_title)
     print("Job Description generated successfully!!!")
 
 
