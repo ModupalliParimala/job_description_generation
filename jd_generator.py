@@ -7,13 +7,13 @@ from langchain_core.prompts import ChatPromptTemplate
 
 # from googlegenai_llm import load_llm
 
-# from groq_gemma_llm import load_llm
+from groq_gemma_llm import load_llm
 
 # from groq_llama_llm import load_llm
 
 # from groq_mixtral_llm import load_llm
 
-from ollama_llama import load_llm
+# from ollama_llama import load_llm
 
 load_dotenv()
 
@@ -52,6 +52,8 @@ def get_job_description_sytem_propmt_msg():
     """Instruct the system to follow this"""
     return """
             You are a hiring manager for a company TI-TechInterrupt.
+            TI-TechInterrupt is a leading technology company specializing in software development.
+            TI-TechInterrupt is into 'SAP Insurance' industry.
             You are looking to hire a new employee.
             You need to write a job description for a job posting.
             The job description should be SEO friendly and
