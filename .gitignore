@@ -2,4 +2,11 @@ venv
 .venv
 __pycache__
 .env
-docs/
+docs/*.txt
+docs/*.pdf
+docs/*.docx
+docs/Gemini-1.5
+docs/Gemma
+docs/GroqLlama-70b
+docs/Mixtral
+docs/Ollama_llama-8b
