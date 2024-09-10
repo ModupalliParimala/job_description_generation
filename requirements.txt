@@ -5,3 +5,4 @@ pypandoc_binary
 langchain_groq
 langchain-ollama
 fastapi[all]
+reportlab

@@ -24,7 +24,7 @@ def delete_file(file_path: str):
     """Deleting the generated files"""
     try:
         os.remove(f"{file_path}.txt")
-        # os.remove(f"{file_path}.pdf")
+        os.remove(f"{file_path}.pdf")
         os.remove(f"{file_path}.docx")
     except Exception as e:
         print(f"Error deleting file {file_path}: {e}")
